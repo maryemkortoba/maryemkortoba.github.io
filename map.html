@@ -20,10 +20,20 @@
 
 <div class="container">
 	<h1>Hello Ms. </h1>
-	<div id="mapid" style="width: 600px; height: 400px;"></div>
+	<div class="container">
+		<div class="row">
+			<div id="map1" class="col-md-4"></div>
+			<div id="map2" class="col-md-4"></div>
+			<div id="map3" class="col-md-4"></div>
+		</div>
+	</div>
+<!-- 	<div id="mapid" style="width: 600px; height: 400px;"></div> -->
 	<script>
 
-		var mymap = L.map('mapid').setView([46, 2], 5);
+		var mymap = L.map('map1').setView([46, 2], 5);
+		var mymap = L.map('map2').setView([46, 2], 5);
+		var mymap = L.map('map3').setView([46, 2], 5);
+		
 
 		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 			maxZoom: 18,
@@ -54,5 +64,5 @@
 </div>
 
 
-</body>
+</body><
 </html>
